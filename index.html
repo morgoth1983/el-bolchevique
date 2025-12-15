@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Bolchevique</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --red: #8b0000;
+      --black: #111;
+      --white: #f4f4f4;
+      --gray: #666;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--white);
+      color: var(--black);
+      line-height: 1.7;
+    }
+
+    header {
+      border-bottom: 3px solid var(--red);
+      padding: 1.2rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      margin-left: 1.2rem;
+      text-decoration: none;
+      color: var(--black);
+      font-size: 0.9rem;
+    }
+
+    nav a:hover {
+      color: var(--red);
+    }
+
+    .lang {
+      font-size: 0.85rem;
+      margin-left: 2rem;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .featured {
+      border-bottom: 2px solid var(--red);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .featured h1 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      color: var(--gray);
+    }
+
+    .regions {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .region h2 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.2rem;
+      border-bottom: 1px solid var(--red);
+      padding-bottom: 0.3rem;
+    }
+
+    .region ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .region li {
+      margin: 0.6rem 0;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      border-top: 2px solid var(--red);
+      margin-top: 4rem;
+      padding: 1.5rem 2rem;
+      font-size: 0.8rem;
+      background: #fff;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">EL BOLCHEVIQUE</div>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Noticias</a>
+    <a href="#">Cuadernos</a>
+    <a href="#">Música Proletaria</a>
+    <a href="#">Análisis</a>
+  </nav>
+
+  <div class="lang">ES | EN | DE</div>
+</header>
+
+<main>
+
+  <section class="featured">
+    <h1>Estallan huelgas en Asia mientras el capital refuerza la represión</h1>
+    <p>Análisis de las nuevas luchas obreras y la respuesta del Estado capitalista.</p>
+    <div class="meta">Asia · 14/12/2025</div>
+  </section>
+
+  <section class="regions">
+
+    <div class="region">
+      <h2>América Latina</h2>
+      <ul>
+        <li>Venezuela: crisis salarial y ajuste</li>
+        <li>Argentina: ofensiva contra sindicatos</li>
+        <li>Brasil: capital chino y dependencia</li>
+      </ul>
+    </div>
+
+    <div class="region">
+      <h2>Europa</h2>
+      <ul>
+        <li>Alemania: recesión y despidos</li>
+        <li>Francia: huelgas en el transporte</li>
+        <li>Estado español: precarización juvenil</li>
+      </ul>
+    </div>
+
+    <div class="region">
+      <h2>Norteamérica</h2>
+      <ul>
+        <li>EE.UU.: represión y migración</li>
+        <li>Canadá: conflicto en logística</li>
+      </ul>
+    </div>
+
+    <div class="region">
+      <h2>Medio Oriente</h2>
+      <ul>
+        <li>Palestina: genocidio y resistencia</li>
+        <li>Siria: reconfiguración imperialista</li>
+      </ul>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>El Bolchevique · Prensa marxista · Formación revolucionaria</p>
+  <p>Analítica respetuosa con la privacidad</p>
+</footer>
+
+</body>
+</html>
